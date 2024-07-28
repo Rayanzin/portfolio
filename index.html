@@ -23,7 +23,7 @@
             <ul id="navegacao">
                 <li>Inicio</li>
                 <li>Projetos</li>
-                <li>Tecnologias</li>
+                <li>Habilidades</li>
                 <li>Sobre</li>
                 <li>Contato</li>
             </ul>
@@ -37,7 +37,7 @@
                 <h2>Sou o Rayan</h2>
                 <h2>&lt / Deselvonvedor Front-end&gt</h2>
                 <p>Ola!, sou Levi Rayan, desenvolvedor frontend utilizando como principais ferramentas
-                    <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>, e gostaria de ajudar você
+                    <strong class="html shadow">HTML</strong>, <strong class="css shadow">CSS</strong> e <strong class="js shadow">Javascript</strong>, e gostaria de ajudar você
                     à transformar sonhos em códigos.
                 </p>
                 <div>
@@ -49,7 +49,8 @@
             </div>
             <div id="picture" data-aos="fade-left" data-aos-duration="1500">
                 <div id="foto">
-                    <img src="imgs/WhatsApp Image 2024-07-26 at 12.31.07.jpeg" alt="Rayan">
+                    <img src="https://preview.redd.it/meu-gato-%C3%A9-praticamente-o-gato-do-meme-v0-n9dleoj8dgfc1.jpg?width=640&crop=smart&auto=webp&s=52de2578fe227e639db822d551bba33c6d28a2f1" alt="Rayan">
+                    <!-- imgs/WhatsApp Image 2024-07-26 at 12.31.07.jpeg -->
                 </div>
             </div>
         </section>
@@ -57,8 +58,8 @@
             <!-- projetos -->
             <h2 data-aos="fade-right" data-aos-duration="1500"><span>[</span> Projetos <span>]</span></h2>
             <section id="projetos">
-                <ul id="lista-pjt" data-aos="fade-up" data-aos-duration="1500">
-                    <li>
+                <ul id="lista-pjt" >
+                    <li data-aos="fade-right" data-aos-duration="1500">
                         <div>
                             <img src="imgs/feiticeiro.png" alt="Slimes RPG">
                         </div>
@@ -67,9 +68,9 @@
                             <p>Desenvolvimento de uma tela de seleção de personagens. Desenvolvido com as seguintes
                                 tecnologias:</p>
                             <ul>
-                                <li class="html"><img src="imgs/html-5.png" alt="html5"></li>
-                                <li class="css"><img src="imgs/css-3.png" alt="css3"></li>
-                                <li class="js"><img src="imgs/js.png" alt="javascript"></li>
+                                <li><img src="imgs/html-5.png" alt="html5"></li>
+                                <li><img src="imgs/css-3.png" alt="css3"></li>
+                                <li><img src="imgs/js.png" alt="javascript"></li>
                             </ul>
                             <div>
                                 <a href="https://rayanzin.github.io/Slimes-RPG/" target="_blank">Acesse o site</a>
@@ -78,7 +79,7 @@
                         </div>
 
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-duration="1000">
                         <div>
                             <img src="imgs/tela-de-login.png" alt="tela de login">
                         </div>
@@ -87,8 +88,8 @@
                             <p>Desenvolvimento de uma tela de login de usuario. desenvolvido com as seguintes
                                 tecnologias:</p>
                             <ul>
-                                <li class="html"><img src="imgs/html-5.png" alt="html5"></li>
-                                <li class="css"><img src="imgs/css-3.png" alt="css3"></li>
+                                <li><img src="imgs/html-5.png" alt="html5"></li>
+                                <li><img src="imgs/css-3.png" alt="css3"></li>
                             </ul>
                             <div>
                                 <a href="https://purlog.netlify.app/" target="_blank">Acesse o site</a>
@@ -99,27 +100,67 @@
                 </ul>
             </section>
         </section>
-        <section id="tecnologias">
+        <section id="habilidades">
             <!-- tecnologias -->
-             <h2><span>[</span> Tecnologias <strong>]</strong></h2>
+             <h2  data-aos="fade-right" data-aos-duration="1500"><span>[</span> Habilidades <span>]</span></h2>
              <section>
                 <ul>
-                    <li>
-                        
+                    <li onmouseenter="html()"  data-aos="fade-right" data-aos-duration="1500">
+                        <img src="imgs/html-5.png" alt="html5">
+                    </li>
+                    <li onmouseenter="css()" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="imgs/css-3.png" alt="css">
+                    </li>
+                    <li onmouseenter="js()" data-aos="fade-right" data-aos-duration="500">
+                        <img src="imgs/js.png" alt="javascript" >
+                    </li>
+                    <li onmouseenter="boots()" data-aos="fade-right" data-aos-duration="1500">
+                        <img src="imgs/bootstrap.png" alt="bootstrap">
+                    </li>
+                    <li onmouseenter="github()" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="imgs/github.png" alt="github">
+                    </li>
+                    <li onmouseenter="git()" data-aos="fade-right" data-aos-duration="500">
+                        <img src="imgs/git.png" alt="git">
                     </li>
                 </ul>
+                <div id="descricao" data-aos="fade-left" data-aos-duration="1500">
+                    
+                </div>
              </section>
         </section>
-        <section>
+        <section id="sobre">
             <!-- sobre no max 3 paragrafos curtos -->
+            <h2 data-aos="fade-right" data-aos-duration="1500"><span>[</span> Sobre <span>]</span></h2>
+            <div id="bio" data-aos="fade-right" data-aos-duration="1500">
+                <p>Olá!, meu nome é Levi rayan, sou um cearense apaixonado por games, que gosta muito de programar</p>
+                <p>Não satisfeito com minha antiga profissão de vendedor descidi realizar uma transição de carreira, agora como desenvolvedor front-end posso realizar o meu sonho e o de varias outras pessoas também</p>
+                <p>Se você precisa de uma ajuda com o seu tão desejado site, pode contar comigo!</p>
+            </div>
         </section>
         <section>
+            <h2 data-aos="fade-right" data-aos-duration="1500"><span>[</span> Contato <span>]</span></h2>
             <!-- contato -->
+             <div id="contato" data-aos="fade-right" data-aos-duration="1500">
+                <form action="https://formsubmit.co/levi.vernick@gmail.com" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required minlength="3">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <input type="submit" name="button" value="Enviar">
+                    <input type="hidden" name="_subject" value="Novo contato!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+             </div>
         </section>
-        <footer>
-
-        </footer>
     </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/Rayanzin" target="_blank">Levi Rayan</a></p>
+    </footer>
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -5,6 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    color: white;
     border: none;
     outline: none;
 }
@@ -16,16 +17,19 @@
     --html: rgb(241, 164, 20);
     --css: rgb(58, 159, 206);
     --js: rgb(230, 230, 24);
+    --boots:rgb(126, 27, 126);
+    --github:#4e5863;
+    --git:rgba(182, 79, 19, 0.894);;
 }
 
 body {
     background-color: rgba(2, 2, 2, 0.877);
     color: white;
     height: 100vh;
-    background: url('../imgs/fundo\ portfolio.jpg');
-    background-size: cover;
 }
-
+body::-webkit-scrollbar{
+    width: 0px;
+}
 nav {
     padding: 10px;
     display: flex;
@@ -38,18 +42,30 @@ nav ul {
 }
 
 main {
-    /* height: 100vh; */
-    width: 1000px;
+    width: 1100px;
     margin: auto;
+    background-color: rgba(22, 22, 22, 0.101);
+    padding-top: 150px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 5px rgba(18, 17, 17, 0.718);
+}
+main > section > h2{
+    text-align: center;
+    margin: 100px 0px 80px 0px;
+    font-size: 2.8em;
+    & span {
+        font-size: 1.5em;
+        color: var(--corprimaria);
+    }
 }
 
-#portfolio li:first-child {
-    text-shadow: 0px 0px 20px white;
+#portfolio li:first-child > h2{
+    text-shadow: 0px 0px 20px;
 }
 
-#portfolio li:last-child {
+#portfolio li:last-child > h2{
     color: var(--corprimaria);
-    text-shadow: 0px 0px 20px var(--corprimaria);
+    text-shadow: 0px 0px 20px ;
 }
 
 #navegacao li {
@@ -69,12 +85,13 @@ main {
 #apresentacao {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
     gap: 200px;
+    margin-bottom: 200px;
 }
 
 #nome {
     width: 350px;
+
     & h1 {
         font-size: 3em;
     }
@@ -95,21 +112,6 @@ main {
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--cortexto);
-
-        & strong:nth-child(1) {
-            color: var(--html);
-            text-shadow: 0px 0px 20px;
-        }
-
-        & strong:nth-child(2) {
-            color: var(--css);
-            text-shadow: 0px 0px 20px;
-        }
-
-        & strong:nth-child(3) {
-            color: var(--js);
-            text-shadow: 0px 0px 20px;
-        }
     }
 
     & div {
@@ -124,6 +126,7 @@ main {
     }
 }
 
+
 #foto {
     width: 250px;
     height: 250px;
@@ -133,30 +136,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+
     & img {
         width: 90%;
         height: 90%;
         border-radius: 50%;
     }
 }
-
-#project {
-    & h2 {
-        text-align: center;
-        margin: 100px 0px 80px 0px;
-        font-size: 2.8em;
-        & span {
-            font-size: 1.5em;
-            color: var(--corprimaria);
-        }
-    }
-}
-
 #lista-pjt {
     display: flex;
     gap: 30px;
     justify-content: center;
-
     & li {
         width: 300px;
         background-color: rgba(59, 58, 58, 0.685);
@@ -206,12 +196,14 @@ main {
                     border-radius: 20px;
                     margin: 10px 0px;
                     font-weight: bold;
-                    & img{
+
+                    & img {
                         width: 50px;
                         height: 50px;
                     }
                 }
-                & li:hover{
+
+                & li:hover {
                     background-color: rgb(126, 120, 120);
                     transition: .2s;
                 }
@@ -238,7 +230,60 @@ main {
     }
 
 }
-
+#habilidades {    
+    margin: 200px 0px 200px 0px;
+    & section {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        & ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            & li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                border-radius: 20px;
+                background-color: rgba(73, 73, 73, 0.121);
+                
+                & img {
+                    width: 80%;
+                    height: 80%;
+                    border-radius: 20px;
+                }
+            }
+            & li:hover{
+                background-color: rgba(157, 151, 151, 0.222);
+                cursor: pointer;
+                transition: .2s;
+            }
+        }
+        & #descricao{
+            padding: 20px;
+            width: 400px;
+            height: 300px;
+            border: 2px solid rgb(45, 43, 43);
+            background-color: rgb(55, 52, 52);
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.436);
+            border-bottom: 2px solid var(--corprimaria);
+        }
+    }
+}
+.titulos-descricao{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.paragrafo-descricao{
+    font-size: 1.3em;
+    text-align: justify;
+}
 .html {
     color: var(--html);
 }
@@ -250,8 +295,106 @@ main {
 .js {
     color: var(--js);
 }
-#tecnologias{
-    & h2{
-        text-align: center;
+.bootstrap{
+    color: var(--boots);
+}
+.github{
+    color: var(--github);
+}
+.git{
+    color: var(--git);
+}
+.shadow{
+    text-shadow: 0px 0px 20px;
+}
+#bio{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 200px;
+    text-align: justify;
+    font-size: 1.3em;
+    border: 2px solid rgb(45, 43, 43);
+    background-color: rgb(55, 52, 52);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
+    border-bottom: 2px solid var(--corprimaria);
+    & p{
+        margin: 20px 0px;
+        text-indent: 30px;
+    }
+}
+#contato{
+    margin: auto;
+    width: 50%;
+    border: 2px solid rgb(45, 43, 43);
+    border-radius: 10px;
+    background-color: rgb(55, 52, 52);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
+    border-bottom: 2px solid var(--corprimaria);
+    & form{
+        & label{
+            font-size: 1.3em;
+            cursor: pointer;
+        }
+        & input{
+            outline: none;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            padding-left: 20px;
+            margin: 10px 0px;
+            font-size: 1.3em;
+            background-color: lightgray;
+            color: black;
+        }
+        & input:focus{
+            border: 2px solid var(--corprimaria);
+        }
+        & textarea{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            padding-left: 20px;
+            margin: 10px 0px;
+            font-size: 1.3em;
+            background-color: lightgray;
+            color: black;
+        }
+        & textarea:focus{
+            border: 2px solid var(--corprimaria);
+        }
+        & input[type="submit"]{
+            background-color: var(--corprimaria);
+            color: var(--cortexto);
+            cursor: pointer;
+            transition: .2s;
+        }
+        & input[type="submit"]:hover{
+            background-color: purple;
+            color: white;
+        }
+        & input[type="submit"]:active{
+            background-color: rgb(78, 2, 78);
+            color: rgb(113, 111, 111);
+        }
+        & input[type="submit"]:focus{
+            border: none;
+        }
+    }
+}
+footer{
+    background-color: rgb(51, 50, 50);
+    padding: 10px;
+    text-align: center;
+    & a:hover{
+        border-bottom: 1px solid var(--cortexto);
+        color: var(--cortexto);
+        transition: .2s;
     }
 }
