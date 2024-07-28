@@ -80,13 +80,17 @@ main > section > h2{
     color: var(--cortexto);
     font-size: 18px;
     cursor: pointer;
-    text-shadow: 0px 0px 20px;
+    /* text-shadow: 0px 0px 20px; */
 }
 
-#navegacao li:hover {
-    color: var(--corprimaria);
-    text-shadow: 0px 0px 20px;
+#navegacao li:hover{
+    margin-top: 6px;
     transition: .2s;
+    & a{
+        color: var(--corprimaria);
+        text-shadow: 0px 0px 20px;
+        transition: .2s;
+    }
 }
 
 #apresentacao {
@@ -100,11 +104,12 @@ main > section > h2{
     width: 350px;
 
     & h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     & h2:nth-child(2) {
-        font-size: 2.6em;
+        font-size: 3em;
+        color: var(--corprimaria);
     }
 
     & h2:nth-child(3) {
@@ -115,18 +120,25 @@ main > section > h2{
 
     & p {
         text-indent: 20px;
-        text-align: justify;
         font-size: 18px;
         margin-bottom: 10px;
         color: var(--cortexto);
     }
 
     & div {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
         & abbr {
             & a {
                 & img {
-                    width: 50px;
-                    height: 50px;
+                    width: 36px;
+                    height: 36px;
+                }
+                & img:hover{
+                    transition: .2s;
+                    width: 40px;
+                    height: 40px;
                 }
             }
         }
@@ -193,7 +205,8 @@ main > section > h2{
             & ul {
                 display: flex;
                 gap: 10px;
-
+                justify-content: center;
+                align-items: center;
                 & li {
                     border: none;
                     width: auto;
@@ -207,6 +220,13 @@ main > section > h2{
                     & img {
                         width: 50px;
                         height: 50px;
+                    }
+                }
+                & li:nth-child(3){
+                    padding: 11px;
+                    & img{
+                        width: 42px;
+                        height: 42px;
                     }
                 }
 
@@ -235,7 +255,6 @@ main > section > h2{
             }
         }
     }
-
 }
 #habilidades {    
     margin: 200px 0px 200px 0px;
@@ -354,7 +373,7 @@ main > section > h2{
             padding: 10px;
             border-radius: 10px;
             padding-left: 20px;
-            margin: 10px 0px;
+            margin: 20px 0px;
             font-size: 1.3em;
             background-color: lightgray;
             color: black;
@@ -368,7 +387,7 @@ main > section > h2{
             padding: 10px;
             border-radius: 10px;
             padding-left: 20px;
-            margin: 10px 0px;
+            margin: 20px 0px;
             font-size: 1.3em;
             background-color: lightgray;
             color: black;
@@ -399,6 +418,7 @@ footer{
     background-color: rgb(51, 50, 50);
     padding: 10px;
     text-align: center;
+    width: 100%;
     & a:hover{
         border-bottom: 1px solid var(--cortexto);
         color: var(--cortexto);
