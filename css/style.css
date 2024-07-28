@@ -21,19 +21,26 @@
     --github:#4e5863;
     --git:rgba(182, 79, 19, 0.894);;
 }
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
 body {
     background-color: rgba(2, 2, 2, 0.877);
     color: white;
+    width: 100vw;
     height: 100vh;
 }
 body::-webkit-scrollbar{
     width: 0px;
 }
 nav {
+    width: 100%;
     padding: 10px;
     display: flex;
     background-color: rgb(51, 50, 50);
+    position: fixed;
+    z-index: 1;
 }
 
 nav ul {
