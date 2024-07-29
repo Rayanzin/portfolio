@@ -12,7 +12,7 @@
 
 :root {
     --corprimaria: #9e329e;
-    --corsecundaria: rgb(226, 28, 226);
+    --corsecundaria: #e34de3;
     --cortexto: rgb(212, 208, 208);
     --html: rgb(241, 164, 20);
     --css: rgb(58, 159, 206);
@@ -38,6 +38,8 @@ nav {
     width: 100%;
     padding: 10px;
     display: flex;
+    justify-content: center;
+    gap: 390px;
     background-color: rgb(51, 50, 50);
     position: fixed;
     z-index: 1;
@@ -45,7 +47,6 @@ nav {
 
 nav ul {
     display: flex;
-    margin: auto;
 }
 
 main {
@@ -75,7 +76,7 @@ main > section > h2{
     text-shadow: 0px 0px 20px ;
 }
 
-#navegacao li {
+#navegacao li{
     margin: 10px;
     color: var(--cortexto);
     font-size: 18px;
@@ -96,6 +97,7 @@ main > section > h2{
 #apresentacao {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 200px;
     margin-bottom: 200px;
 }
@@ -104,18 +106,18 @@ main > section > h2{
     width: 350px;
 
     & h1 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     & h2:nth-child(2) {
-        font-size: 3em;
-        color: var(--corprimaria);
+        font-size: 2.6em;
     }
 
     & h2:nth-child(3) {
         color: var(--corprimaria);
-        margin: 10px 0px 10px;
+        margin: 50px 0px 10px;
         text-shadow: 0px 0px 20px;
+        font-size: 1.2em;
     }
 
     & p {
@@ -147,8 +149,8 @@ main > section > h2{
 
 
 #foto {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     box-shadow: 0px 0px 50px var(--corprimaria);
     overflow: hidden;
