@@ -8,6 +8,7 @@
     color: white;
     border: none;
     outline: none;
+    
 }
 
 :root {
@@ -26,6 +27,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 120px;
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
 }
 
 body {
