@@ -78,6 +78,10 @@
             left: 84.80%;
         }
     }
+    #contato {
+        transition: .5s;
+        width: 60%;
+    }
 }
 @media screen and (max-width:650px) {
     nav{
