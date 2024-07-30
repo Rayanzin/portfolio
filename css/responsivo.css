@@ -5,8 +5,126 @@
 1025px — 1200px: desktops, telas grandes
 1201px e acima —  telas muito grandes, TVs 
 */
+@media screen and (max-width: 1200px) {
+    #home {
+        top: 88%;
+        left: 91%;
+
+        &:hover {
+            top: 87.80%;
+            left: 90.80%;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
-    html{
-        scroll-padding-top: 90px;
+    html {
+        scroll-padding-top: 160px;
+    }
+
+    #contato {
+        transition: .5s;
+        width: 40%;
+
+        & textarea {
+            height: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        gap: 100px;
+    }
+    main {
+        max-width: 768px;
+        & section > h2{
+            font-size: 2em;
+        }
+    }
+    #apresentacao {
+        gap: 50px;
+
+        & #nome {
+            width: 300px;
+
+            & h2:nth-child(2) {
+                font-size: 4em;
+            }
+
+            & p {
+                font-size: 1em;
+            }
+        }
+
+        & #foto {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    #lista-pjt{
+        & li{
+            width: 250px;
+        }
+    }
+    #home {
+        top: 88%;
+        left: 85%;
+
+        &:hover {
+            top: 87.80%;
+            left: 84.80%;
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    nav{
+        & #navegacao{
+            display: none;
+        }
+    }
+    main{
+        max-width: 480px;
+        & section > h2{
+            font-size: 1.5em;
+        }
+        & #bio{
+            width: 80%;
+        }
+    }
+    #apresentacao{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        & #nome{
+            text-align: center;
+        }
+        & #foto{
+                height: 200px;
+                width: 200px;  
+        }
+    }
+    #lista-pjt{
+        flex-direction: column;
+        align-items: center;
+        & li{
+            width: 300px;
+        }
+    }
+    /* #habilidades{
+        & section > ul{
+            grid-template-columns: 1fr;
+        }
+    } */
+     #contato{
+        width: 80%;
+     }
+     #home {
+        top: 88%;
+        left: 82%;
+
+        &:hover {
+            top: 87.80%;
+            left: 84.80%;
+        }
     }
 }

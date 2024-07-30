@@ -44,8 +44,10 @@
                     à transformar sonhos em códigos.
                 </p>
                 <div>
-                    <abbr title="Linkedin"><a href="https://www.linkedin.com/in/levi-rayan-1696052b6/" target="_blank"><img src="imgs/linkedin.png" alt="linkedin"></a></abbr>
-                    <abbr title="Github"><a href="https://github.com/Rayanzin" target="_blank"><img  src="imgs/github.png" alt="github"></a></abbr>
+                    <abbr title="Linkedin"><a href="https://www.linkedin.com/in/levi-rayan-1696052b6/"
+                            target="_blank"><box-icon name='linkedin-square' type='logo'></box-icon></a></abbr>
+                    <abbr title="Github"><a href="https://github.com/Rayanzin" target="_blank"><box-icon type='logo'
+                                name='github'></box-icon></a></abbr>
                 </div>
             </div>
             <div id="picture" data-aos="fade-left" data-aos-duration="1500">
@@ -67,15 +69,18 @@
                 <p>
                     Após uma transição de carreira de vendedor para desenvolvedor, agora realizo meu sonho de criar
                     sites modernos e envolventes. Estou aqui para transformar suas ideias em experiências digitais
-                    incríveis, ajudando você a se destacar online.
+                    incríveis, favorecendo você a se destacar online.
                     <!-- Não satisfeito com minha antiga profissão de vendedor descidi realizar uma transição de carreira,
                     agora como desenvolvedor front-end posso realizar o meu sonho e o de varias outras pessoas também -->
                 </p>
                 <p>
                     Precisa de um site dos sonhos? Vamos juntos dar vida ao seu projeto! Entre em contato e descubra
-                    como posso ajudar.
+                    como posso contribuir.
                     <!-- Se você precisa de uma ajuda com o seu tão desejado site, pode contar comigo! -->
                 </p>
+                <div>
+                    <button><a href="#contatar">Contato</a></button>
+                </div>
             </div>
         </section>
         <section id="project">
@@ -91,10 +96,10 @@
                             <h3>Slimes RPG</h3>
                             <p>Desenvolvimento de uma tela de seleção de personagens. Desenvolvido com as seguintes
                                 tecnologias:</p>
-                            <ul .class="logos">
-                                <li><img src="imgs/html-5.png" alt="html5"></li>
-                                <li><img src="imgs/css-3.png" alt="css3"></li>
-                                <li><img src="imgs/js.png" alt="javascript"></li>
+                            <ul class="logos">
+                                <li><box-icon name='html5' type='logo'></box-icon></li>
+                                <li><box-icon name='css3' type='logo'></box-icon></li>
+                                <li><box-icon name='javascript' type='logo'></box-icon></li>
                             </ul>
                             <div>
                                 <a href="https://rayanzin.github.io/Slimes-RPG/" target="_blank">Acesse o site</a>
@@ -111,9 +116,9 @@
                             <h3>Login</h3>
                             <p>Desenvolvimento de uma tela de login de usuario. desenvolvido com as seguintes
                                 tecnologias:</p>
-                            <ul>
-                                <li><img src="imgs/html-5.png" alt="html5"></li>
-                                <li><img src="imgs/css-3.png" alt="css3"></li>
+                            <ul class="logos">
+                                <li><box-icon name='html5' type='logo'></box-icon></li>
+                                <li><box-icon name='css3' type='logo'></box-icon></li>
                             </ul>
                             <div>
                                 <a href="https://purlog.netlify.app/" target="_blank">Acesse o site</a>
@@ -130,27 +135,27 @@
             <section>
                 <ul>
                     <li onmouseenter="html()" data-aos="fade-right" data-aos-duration="1500">
-                        <img src="imgs/html-5.png" alt="html5">
+                        <box-icon name='html5' type='logo'></box-icon>
                     </li>
                     <li onmouseenter="css()" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="imgs/css-3.png" alt="css">
+                        <box-icon name='css3' type='logo'></box-icon>
                     </li>
-                    <li onmouseenter="js()" data-aos="fade-right" data-aos-duration="500">
-                        <img src="imgs/js.png" alt="javascript">
+                    <li onmouseenter="js()" id="li-js" data-aos="fade-right" data-aos-duration="500">
+                        <box-icon name='javascript' type='logo'></box-icon>
                     </li>
-                    <li onmouseenter="boots()" data-aos="fade-right" data-aos-duration="1500">
-                        <img src="imgs/bootstrap.png" alt="bootstrap">
+                    <li onmouseenter="boots()" id="li-boots" data-aos="fade-right" data-aos-duration="1500">
+                        <box-icon name='bootstrap' type='logo'></box-icon>
                     </li>
                     <li onmouseenter="github()" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="imgs/github.png" alt="github">
+                        <box-icon name='github' type='logo'></box-icon>
                     </li>
                     <li onmouseenter="git()" data-aos="fade-right" data-aos-duration="500">
-                        <img src="imgs/git.png" alt="git">
+                        <box-icon type='logo' name='git'></box-icon>
                     </li>
                 </ul>
-                <div id="descricao" data-aos="fade-left" data-aos-duration="1500">
+                <!-- <div id="descricao" data-aos="fade-left" data-aos-duration="1500">
 
-                </div>
+                </div> -->
             </section>
         </section>
         <section id="contatar">
@@ -173,6 +178,9 @@
             </div>
         </section>
     </main>
+    <div id="home">
+        <a href="#header"><box-icon name='home'></box-icon></a>
+    </div>
     <footer>
         <p>Desenvolvido por <a href="https://github.com/Rayanzin" target="_blank">Levi Rayan</a></p>
     </footer>

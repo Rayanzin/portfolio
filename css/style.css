@@ -13,32 +13,39 @@
 :root {
     --corprimaria: #9e329e;
     --corsecundaria: #e34de3;
-    --cortexto: rgb(212, 208, 208);
-    --html: rgb(241, 164, 20);
-    --css: rgb(58, 159, 206);
-    --js: rgb(230, 230, 24);
-    --boots:rgb(126, 27, 126);
-    --github:#4e5863;
-    --git:rgba(182, 79, 19, 0.894);;
+    --cortexto: #d4d0d0;
+    --html: #f1a414;
+    --css: #3a9fce;
+    --js: #e6e618;
+    --boots: #7e1b7e;
+    --github: #ffffff;
+    --git: #b64f13e4;
+    --linkedin: #0077B5;
 }
-html{
+
+html {
     scroll-behavior: smooth;
-    scroll-padding-top: 200px;
+    scroll-padding-top: 120px;
 }
+
 body {
     background-color: rgba(2, 2, 2, 0.877);
     color: white;
     width: 100vw;
     height: 100vh;
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
 }
-body::-webkit-scrollbar{
-    width: 0px;
-}
+
+
 nav {
     width: 100%;
     padding: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 390px;
     background-color: rgb(51, 50, 50);
     position: fixed;
@@ -57,26 +64,35 @@ main {
     padding-bottom: 50px;
     box-shadow: 0px 0px 5px rgba(18, 17, 17, 0.718);
 }
-main > section > h2{
+
+main>section>h2 {
     text-align: center;
     margin: 100px 0px 80px 0px;
     font-size: 2.8em;
+
     & span {
         font-size: 1.5em;
-        color: var(--corprimaria);
+        /* color: var(--corprimaria); */
+        color: transparent;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: var(--corsecundaria);
+        text-shadow: 0 0 26px var(--corsecundaria);
     }
 }
 
-#portfolio li:first-child > h2{
-    text-shadow: 0px 0px 20px;
+#portfolio{
+    & li:first-child>h2 {
+        text-shadow: 0px 0px 20px;
+    }
+    
+    & li:last-child>h2 {
+        color: var(--corprimaria);
+        text-shadow: 0px 0px 20px;
+    }
 }
 
-#portfolio li:last-child > h2{
-    color: var(--corprimaria);
-    text-shadow: 0px 0px 20px ;
-}
 
-#navegacao li{
+#navegacao li {
     margin: 10px;
     color: var(--cortexto);
     font-size: 18px;
@@ -84,10 +100,11 @@ main > section > h2{
     /* text-shadow: 0px 0px 20px; */
 }
 
-#navegacao li:hover{
+#navegacao li:hover {
     margin-top: 6px;
     transition: .2s;
-    & a{
+
+    & a {
         color: var(--corprimaria);
         text-shadow: 0px 0px 20px;
         transition: .2s;
@@ -106,16 +123,20 @@ main > section > h2{
     width: 350px;
 
     & h1 {
-        font-size: 3em;
+        font-size: 1.5em;
     }
 
     & h2:nth-child(2) {
-        font-size: 2.6em;
+        font-size: 7em;
+        color: transparent;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: var(--corsecundaria);
+        text-shadow: 0 0 26px var(--corsecundaria);
     }
 
     & h2:nth-child(3) {
         color: var(--corprimaria);
-        margin: 50px 0px 10px;
+        margin: 60px 0px 10px;
         text-shadow: 0px 0px 20px;
         font-size: 1.2em;
     }
@@ -128,22 +149,30 @@ main > section > h2{
     }
 
     & div {
+
         display: flex;
         gap: 10px;
         justify-content: end;
+
         & abbr {
             & a {
-                & img {
-                    width: 36px;
-                    height: 36px;
-                }
-                & img:hover{
-                    transition: .2s;
+                & box-icon {
                     width: 40px;
                     height: 40px;
+                    transition: .2s;
                 }
+
+            }
+
+            &:nth-child(1) box-icon:hover {
+                fill: var(--linkedin);
+            }
+
+            &:nth-child(2) box-icon:hover {
+                fill: var(--github);
             }
         }
+
     }
 }
 
@@ -164,10 +193,12 @@ main > section > h2{
         border-radius: 50%;
     }
 }
+
 #lista-pjt {
     display: flex;
     gap: 30px;
     justify-content: center;
+
     & li {
         width: 300px;
         background-color: rgba(59, 58, 58, 0.685);
@@ -209,6 +240,7 @@ main > section > h2{
                 gap: 10px;
                 justify-content: center;
                 align-items: center;
+
                 & li {
                     border: none;
                     width: auto;
@@ -218,23 +250,27 @@ main > section > h2{
                     border-radius: 20px;
                     margin: 10px 0px;
                     font-weight: bold;
+                    display: flex;
+                    align-items: center;
 
-                    & img {
-                        width: 50px;
-                        height: 50px;
+                    & box-icon {
+                        width: 40px;
+                        height: 40px;
+                        transition: .5s;
                     }
-                }
-                & li:nth-child(3){
-                    padding: 11px;
-                    & img{
-                        width: 42px;
-                        height: 42px;
-                    }
-                }
 
-                & li:hover {
-                    background-color: rgb(126, 120, 120);
-                    transition: .2s;
+                    &:nth-child(1) box-icon:hover {
+                        fill: var(--html);
+                    }
+
+                    &:nth-child(2) box-icon:hover {
+                        fill: var(--css);
+                    }
+
+                    &:nth-child(3) box-icon:hover {
+                        fill: var(--js);
+                        border-radius: 10px;
+                    }
                 }
             }
 
@@ -258,18 +294,22 @@ main > section > h2{
         }
     }
 }
-#habilidades {    
-    margin: 200px 0px 200px 0px;
+
+#habilidades {
+    margin: 200px 0px 300px 0px;
+
     & section {
         display: flex;
         justify-content: center;
         gap: 100px;
+
         & ul {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
             gap: 20px;
+
             & li {
                 display: flex;
                 justify-content: center;
@@ -278,20 +318,40 @@ main > section > h2{
                 height: 100px;
                 border-radius: 20px;
                 background-color: rgba(73, 73, 73, 0.121);
-                
-                & img {
-                    width: 80%;
-                    height: 80%;
-                    border-radius: 20px;
+
+                & box-icon {
+                    width: 90px;
+                    height: 90px;
+                    transition: .5s;
+                }
+
+                &:nth-child(1) box-icon:hover {
+                    fill: var(--html);
+                }
+
+                &:nth-child(2) box-icon:hover {
+                    fill: var(--css);
+                }
+
+                &:nth-child(3) box-icon:hover {
+                    fill: var(--js);
+                }
+
+                &:nth-child(4) box-icon:hover {
+                    fill: var(--boots);
+                }
+
+                &:nth-child(5) box-icon:hover {
+                    fill: var(--github);
+                }
+
+                &:nth-child(6) box-icon:hover {
+                    fill: var(--git);
                 }
             }
-            & li:hover{
-                background-color: rgba(157, 151, 151, 0.222);
-                cursor: pointer;
-                transition: .2s;
-            }
         }
-        & #descricao{
+
+        /* & #descricao {
             padding: 20px;
             width: 400px;
             height: 300px;
@@ -300,18 +360,21 @@ main > section > h2{
             border-radius: 10px;
             box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.436);
             border-bottom: 2px solid var(--corprimaria);
-        }
+        } */
     }
 }
-.titulos-descricao{
+
+.titulos-descricao {
     text-align: center;
     font-size: 2em;
     margin-bottom: 10px;
 }
-.paragrafo-descricao{
+
+.paragrafo-descricao {
     font-size: 1.3em;
     text-align: justify;
 }
+
 .html {
     color: var(--html);
 }
@@ -323,23 +386,14 @@ main > section > h2{
 .js {
     color: var(--js);
 }
-.bootstrap{
-    color: var(--boots);
-}
-.github{
-    color: var(--github);
-}
-.git{
-    color: var(--git);
-}
-.shadow{
+.shadow {
     text-shadow: 0px 0px 20px;
 }
-#bio{
+
+#bio {
     width: 50%;
     margin: auto;
     margin-bottom: 200px;
-    text-align: justify;
     font-size: 1.3em;
     border: 2px solid rgb(45, 43, 43);
     background-color: rgb(55, 52, 52);
@@ -347,12 +401,35 @@ main > section > h2{
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
     border-bottom: 2px solid var(--corprimaria);
-    & p{
+
+    & p {
         margin: 20px 0px;
         text-indent: 30px;
     }
+   & div{
+    display: flex;
+    justify-content: end;
+    & button {
+        background-color: var(--corprimaria);
+        color: var(--cortexto);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .3s;
+        font-size: 18px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+        &:hover{
+            background-color: purple;
+        }
+        &:active{
+            background-color: rgb(78, 2, 78);
+            color: white;
+        }
+    }
+   }
 }
-#contato{
+
+#contato {
     margin: auto;
     width: 50%;
     border: 2px solid rgb(45, 43, 43);
@@ -363,12 +440,14 @@ main > section > h2{
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
     border-bottom: 2px solid var(--corprimaria);
-    & form{
-        & label{
+
+    & form {
+        & label {
             font-size: 1.3em;
             cursor: pointer;
         }
-        & input{
+
+        & input {
             outline: none;
             display: block;
             width: 100%;
@@ -379,11 +458,15 @@ main > section > h2{
             font-size: 1.3em;
             background-color: lightgray;
             color: black;
+            border: 2px solid transparent;
         }
-        & input:focus{
+
+        & input:focus {
             border: 2px solid var(--corprimaria);
         }
-        & textarea{
+
+        & textarea {
+            border: 2px solid transparent;
             display: block;
             width: 100%;
             padding: 10px;
@@ -394,35 +477,85 @@ main > section > h2{
             background-color: lightgray;
             color: black;
         }
-        & textarea:focus{
+
+        & textarea:focus {
             border: 2px solid var(--corprimaria);
         }
-        & input[type="submit"]{
+
+        & input[type="submit"] {
             background-color: var(--corprimaria);
             color: var(--cortexto);
             cursor: pointer;
             transition: .2s;
         }
-        & input[type="submit"]:hover{
+
+        & input[type="submit"]:hover {
             background-color: purple;
+        }
+
+        & input[type="submit"]:active {
+            background-color: rgb(78, 2, 78);
             color: white;
         }
-        & input[type="submit"]:active{
-            background-color: rgb(78, 2, 78);
-            color: rgb(113, 111, 111);
-        }
-        & input[type="submit"]:focus{
+
+        & input[type="submit"]:focus {
             border: none;
         }
     }
 }
-footer{
+
+#home {
+    position: fixed;
+    top: 88%;
+    left: 94%;
+    background-color: var(--corprimaria);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.554);
+    & box-icon {
+        transition: .3s;
+        fill: rgb(234, 220, 220);
+    }
+    &:hover {
+        background-color: purple;
+        width: 65px;
+        height: 65px;
+        box-shadow: 4px 4px 10px rgb(0, 0, 0);
+        top: 87.80%;
+        left: 93.80%;
+
+        & a box-icon {
+            transition: .3s;
+            fill: rgb(180, 173, 173);
+        }
+    }
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        & box-icon {
+            width: 70%;
+            height: 70%;
+        }
+    }
+}
+
+footer {
     background-color: rgb(51, 50, 50);
     padding: 10px;
-    & p{
+
+    & p {
         text-align: center;
     }
-    & a:hover{
+
+    & a:hover {
         border-bottom: 1px solid var(--cortexto);
         color: var(--cortexto);
         transition: .2s;
