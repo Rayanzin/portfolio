@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 1024px) {
     html {
-        scroll-padding-top: 160px;
+        scroll-padding-top: 90px;
     }
     main{
         max-width: 100%;
