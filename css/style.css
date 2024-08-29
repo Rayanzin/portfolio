@@ -8,7 +8,7 @@
     color: white;
     border: none;
     outline: none;
-    
+
 }
 
 :root {
@@ -83,11 +83,11 @@ main>section>h2 {
     }
 }
 
-#portfolio{
+#portfolio {
     & li:first-child>h2 {
         text-shadow: 0px 0px 20px;
     }
-    
+
     & li:last-child>h2 {
         color: var(--corprimaria);
         text-shadow: 0px 0px 20px;
@@ -390,6 +390,7 @@ main>section>h2 {
 .js {
     color: var(--js);
 }
+
 .shadow {
     text-shadow: 0px 0px 20px;
 }
@@ -410,27 +411,31 @@ main>section>h2 {
         margin: 20px 0px;
         text-indent: 30px;
     }
-   & div{
-    display: flex;
-    justify-content: end;
-    & button {
-        background-color: var(--corprimaria);
-        color: var(--cortexto);
-        padding: 10px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: .3s;
-        font-size: 18px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
-        &:hover{
-            background-color: purple;
-        }
-        &:active{
-            background-color: rgb(78, 2, 78);
-            color: white;
+
+    & div {
+        display: flex;
+        justify-content: end;
+
+        & button {
+            background-color: var(--corprimaria);
+            color: var(--cortexto);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .3s;
+            font-size: 18px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+
+            &:hover {
+                background-color: purple;
+            }
+
+            &:active {
+                background-color: rgb(78, 2, 78);
+                color: white;
+            }
         }
     }
-   }
 }
 
 #contato {
@@ -508,6 +513,53 @@ main>section>h2 {
     }
 }
 
+#zap {
+    position: fixed;
+    top: 76%;
+    left: 94%;
+    background-color: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.554);
+
+    & box-icon {
+        transition: .3s;
+        fill: rgb(234, 220, 220);
+    }
+
+    &:hover {
+        background-color: #1b9648;
+        width: 65px;
+        height: 65px;
+        box-shadow: 4px 4px 10px rgb(0, 0, 0);
+        top: 75.80%;
+        left: 93.80%;
+
+        & a box-icon {
+            transition: .3s;
+            fill: rgb(180, 173, 173);
+        }
+    }
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        & box-icon {
+            width: 70%;
+            height: 70%;
+        }
+    }
+}
+
+
+
 #home {
     position: fixed;
     top: 88%;
@@ -519,10 +571,12 @@ main>section>h2 {
     transition: .3s;
     cursor: pointer;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.554);
+
     & box-icon {
         transition: .3s;
         fill: rgb(234, 220, 220);
     }
+
     &:hover {
         background-color: purple;
         width: 65px;

@@ -6,6 +6,16 @@
 1201px e acima —  telas muito grandes, TVs 
 */
 @media screen and (max-width: 1200px) {
+    #zap {
+        top: 76%;
+        left: 91%;
+
+        &:hover {
+            top: 75.80%;
+            left: 90.80%;
+        }
+    }
+
     #home {
         top: 88%;
         left: 91%;
@@ -69,6 +79,15 @@
             width: 250px;
         }
     }
+    #zap {
+        top: 76%;
+        left: 85%;
+
+        &:hover {
+            top: 75.80%;
+            left: 84.80%;
+        }
+    }
     #home {
         top: 88%;
         left: 85%;
@@ -124,6 +143,15 @@
      #contato{
         width: 80%;
      }
+     #zap {
+        top: 76%;
+        left: 82%;
+
+        &:hover {
+            top: 75.80%;
+            left: 84.80%;
+        }
+    }
      #home {
         top: 88%;
         left: 82%;
