@@ -194,6 +194,7 @@ main>section>h2 {
         width: 90%;
         height: 90%;
         border-radius: 50%;
+        object-fit: cover;
     }
 }
 
