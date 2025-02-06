@@ -22,6 +22,9 @@
     --github: #ffffff;
     --git: #b64f13e4;
     --linkedin: #0077B5;
+    --react: #0077B5;
+    --node: #4db922;
+    --tailwindcss: #0077B5;
 }
 
 html {
@@ -351,6 +354,15 @@ main>section>h2 {
 
                 &:nth-child(6) box-icon:hover {
                     fill: var(--git);
+                }
+                &:nth-child(7) box-icon:hover {
+                    fill: var(--react);
+                }
+                &:nth-child(8) box-icon:hover {
+                    fill: var(--node);
+                }
+                &:nth-child(9) box-icon:hover {
+                    fill: var(--tailwindcss);
                 }
             }
         }
