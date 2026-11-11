@@ -1,249 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayan portfólio</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivo.css">
-    <link rel="shortcut icon" href="imgs/portfolio-profissional.png" type="image/x-icon">
+    <meta name="theme-color" content="#10131b">
+    <meta name="description" content="Este site mudou. Acesse o novo site do Galego dos Sites.">
+    <title>Este site mudou | Galego dos Sites</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #10131b;
+            color: #f5f7fb;
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            min-width: 320px;
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            background:
+                radial-gradient(ellipse at 50% 0%, rgb(93 73 220 / 20%), transparent 55%),
+                #10131b;
+        }
+
+        main {
+            width: min(100%, 620px);
+            padding: clamp(32px, 8vw, 64px);
+            border: 1px solid rgb(255 255 255 / 10%);
+            border-radius: 28px;
+            background: rgb(24 28 39 / 88%);
+            text-align: center;
+            box-shadow: 0 24px 80px rgb(0 0 0 / 30%);
+        }
+
+        .mark {
+            display: grid;
+            width: 58px;
+            height: 58px;
+            margin: 0 auto 28px;
+            place-items: center;
+            border: 1px solid rgb(167 151 255 / 30%);
+            border-radius: 18px;
+            background: rgb(119 94 255 / 14%);
+            color: #b7a9ff;
+            font-size: 27px;
+            font-weight: 700;
+        }
+
+        .eyebrow {
+            margin: 0 0 14px;
+            color: #b7a9ff;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.2rem, 8vw, 3.5rem);
+            letter-spacing: -0.055em;
+            line-height: 1.05;
+        }
+
+        .message {
+            max-width: 430px;
+            margin: 20px auto 30px;
+            color: #aeb5c5;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-flex;
+            min-height: 54px;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 0 24px;
+            border-radius: 14px;
+            background: #8b78ff;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 160ms ease, transform 160ms ease;
+        }
+
+        .button:hover { background: #9b8bff; transform: translateY(-2px); }
+        .button:focus-visible { outline: 3px solid #d2caff; outline-offset: 4px; }
+
+        .address {
+            display: block;
+            margin-top: 18px;
+            color: #8d96aa;
+            font-size: 0.9rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .address:hover { color: #d2caff; }
+    </style>
 </head>
-
 <body>
-    <header id="header">
-        <nav data-aos="fade-down" data-aos-duration="1500">
-            <ul id="portfolio">
-                <li>
-                    <h2>Portfó</h2>
-                </li>
-                <li>
-                    <h2>lio</h2>
-                </li>
-            </ul>
-            <ul id="navegacao">
-                <li><a href="#header">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#project">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contatar">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <section id="apresentacao">
-            <div id="nome" data-aos="fade-right" data-aos-duration="1500">
-                <!-- apresentação -->
-                <h1>Hello World !</h1>
-                <h2>Sou o Rayan</h2>
-                <h2>&lt / Deselvonvedor Front-end&gt</h2>
-                <p>Olá, sou Levi Rayan, desenvolvedor frontend apaixonado por transformar ideias em experiências
-                    digitais incríveis. Com experiência em React.js, Tailwind CSS, HTML, CSS e JavaScript, meu objetivo
-                    é ajudar você a transformar sonhos em códigos, criando soluções criativas, responsivas e eficientes.
-                </p>
-                <div>
-                    <abbr title="Linkedin"><a href="https://www.linkedin.com/in/levi-rayan-1696052b6/"
-                            target="_blank"><box-icon name='linkedin-square' type='logo'></box-icon></a></abbr>
-                    <abbr title="Github"><a href="https://github.com/Rayanzin" target="_blank"><box-icon type='logo'
-                                name='github'></box-icon></a></abbr>
-                </div>
-            </div>
-            <div id="picture" data-aos="fade-left" data-aos-duration="1500">
-                <div id="foto">
-                    <img src="imgs/Eu.jpeg" alt="Rayan">
-                    <!-- imgs/WhatsApp Image 2024-07-26 at 12.31.07.jpeg -->
-                </div>
-            </div>
-        </section>
-        <section id="sobre">
-            <!-- sobre no max 3 paragrafos curtos -->
-            <h2 data-aos="fade-right" data-aos-duration="1500"><span>[</span> Sobre <span>]</span></h2>
-            <div id="bio" data-aos="fade-right" data-aos-duration="1500">
-                <p>
-                    Olá! Sou Levi Rayan, desenvolvedor front-end apaixonado por tecnologia, interfaces modernas e
-                    experiências digitais envolventes.
-                </p>
-                <p>
-                    Atuo na criação de sites responsivos e bem estruturados, utilizando ferramentas como React.js e
-                    Tailwind CSS para entregar soluções que unem desempenho, usabilidade e design. Meu foco é
-                    transformar ideias em produtos digitais que se destacam e geram valor para negócios e pessoas.
-                </p>
-                <p>
-                    Se você precisa de um site profissional, funcional e visualmente atrativo, estou pronto para ajudar
-                    no seu projeto.
-                </p>
-                <div>
-                    <button><a href="#contatar">Contato</a></button>
-                </div>
-            </div>
-        </section>
-        <section id="project">
-            <!-- projetos -->
-            <h2 data-aos="fade-right" data-aos-duration="1500"><span>[</span> Projetos <span>]</span></h2>
-            <section id="projetos">
-                <ul id="lista-pjt">
-                    <!-- <li data-aos="fade-right" data-aos-duration="1500">
-                        <div>
-                            <img src="imgs/feiticeiro.png" alt="Slimes RPG">
-                        </div>
-                        <div>
-                            <h3>Slimes RPG</h3>
-                            <p>Desenvolvimento de uma tela de seleção de personagens. Desenvolvido com as seguintes
-                                tecnologias:</p>
-                            <ul class="logos">
-                                <li><box-icon name='html5' type='logo'></box-icon></li>
-                                <li><box-icon name='css3' type='logo'></box-icon></li>
-                                <li><box-icon name='javascript' type='logo'></box-icon></li>
-                            </ul>
-                            <div>
-                                <a href="https://rayanzin.github.io/Slimes-RPG/" target="_blank">Acesse o site</a>
-                                <a href="https://github.com/Rayanzin/Slimes-RPG" target="_blank">Github</a>
-                            </div>
-                        </div>
-
-                    </li> -->
-                    <li data-aos="fade-right" data-aos-duration="1000">
-                        <div>
-                            <img class="img" src="imgs/tiamatte-logo.jpeg" alt="tiamatte-logo">
-                        </div>
-                        <div>
-                            <h3>Tiamate Coffee</h3>
-                            <p>
-                                Desenvolvimento de uma landing page para promover a Tiamate, utilizando React.js e
-                                Tailwind CSS. O projeto foca em uma interface responsiva e moderna, com uma navegação
-                                fluida e otimização para uma experiência de usuário intuitiva e atrativa.
-                            </p>
-                            <ul class="logos">
-                                <li><box-icon name='react' type='logo'></box-icon></li>
-                                <li><box-icon name='tailwind-css' type='logo'></box-icon></li>
-                                <li><box-icon name='javascript' type='logo'></box-icon></li>
-                                <li><box-icon name='nodejs' type='logo'></box-icon></li>
-                            </ul>
-                            <div>
-                                <a href="https://tiamate-coffe.vercel.app" target="_blank">Acesse o site</a>
-                                <a href="https://github.com/Rayanzin/tiamate-coffe" target="_blank">Github</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="1000">
-                        <div>
-                            <img class="img" src="imgs/fabiasantos.jpeg" alt="Fabia Santos">
-                        </div>
-                        <div>
-                            <h3>Terapeuta&Tricologista</h3>
-                            <p>
-                                Desenvolvimento de um site institucional para divulgar os serviços da Fabia, terapeuta
-                                tricologista, utilizando React.js e Tailwind CSS. O projeto prioriza uma interface
-                                responsiva e elegante, com navegação fluida e foco na experiência do usuário, além de
-                                integração com WhatsApp e redes sociais. </p>
-                            <ul class="logos">
-                                <li><box-icon name='react' type='logo'></box-icon></li>
-                                <li><box-icon name='tailwind-css' type='logo'></box-icon></li>
-                                <li><box-icon name='javascript' type='logo'></box-icon></li>
-                                <li><box-icon name='nodejs' type='logo'></box-icon></li>
-                            </ul>
-                            <div>
-                                <a href="https://fabiaterapeutatricologista.com.br/" target="_blank">Acesse o site</a>
-                                <a href="https://github.com/Rayanzin/" target="_blank">Github</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="1000">
-                        <div>
-                            <img class="img" src="imgs/fatima.jpg" alt="Fabia Santos">
-                        </div>
-                        <div>
-                            <h3>Fátima terapeuta ocupacional</h3>
-                            <p>
-                                Desenvolvimento de site institucional para a Fátima, terapeuta ocupacional, utilizando React.js e Tailwind CSS. Layout responsivo, navegação intuitiva e integração com WhatsApp e redes sociais para facilitar o contato com clientes.
-                            </p>
-                            <ul class="logos">
-                                <li><box-icon name='react' type='logo'></box-icon></li>
-                                <li><box-icon name='tailwind-css' type='logo'></box-icon></li>
-                                <li><box-icon name='javascript' type='logo'></box-icon></li>
-                                <li><box-icon name='nodejs' type='logo'></box-icon></li>
-                            </ul>
-                            <div>
-                                <a href="https://fatimaterapeutaocupacional.com.br/" target="_blank">Acesse o site</a>
-                                <a href="https://github.com/Rayanzin" target="_blank">Github</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </section>
-        <section id="habilidades">
-            <!-- tecnologias -->
-            <h2 data-aos="fade-right" data-aos-duration="1500"><span>[</span> Habilidades <span>]</span></h2>
-            <section>
-                <ul>
-                    <li data-aos="fade-right" data-aos-duration="1500">
-                        <box-icon name='html5' type='logo'></box-icon>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="1000">
-                        <box-icon name='css3' type='logo'></box-icon>
-                    </li>
-                    <li id="li-js" data-aos="fade-right" data-aos-duration="500">
-                        <box-icon name='javascript' type='logo'></box-icon>
-                    </li>
-                    <li id="li-boots" data-aos="fade-right" data-aos-duration="1500">
-                        <box-icon name='bootstrap' type='logo'></box-icon>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="1000">
-                        <box-icon name='github' type='logo'></box-icon>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="500">
-                        <box-icon type='logo' name='git'></box-icon>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="1500">
-                        <box-icon type='logo' name='react'></box-icon>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="1000">
-                        <box-icon name='nodejs' type='logo'></box-icon>
-                    </li>
-                    <li data-aos="fade-right" data-aos-duration="500">
-                        <box-icon name='tailwind-css' type='logo'></box-icon>
-                    </li>
-                </ul>
-                <!-- <div id="descricao" data-aos="fade-left" data-aos-duration="1500">
-
-                </div> -->
-            </section>
-        </section>
-        <section id="contatar">
-            <h2 data-aos="fade-right" data-aos-duration="1500"><span>[</span> Contato <span>]</span></h2>
-            <!-- contato -->
-            <div id="contato" data-aos="fade-right" data-aos-duration="1500">
-                <form action="https://formsubmit.co/levi.vernick@gmail.com" method="post">
-                    <label for="name">Nome:</label>
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required minlength="3">
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"
-                        required></textarea>
-                    <input type="submit" name="button" value="Enviar">
-                    <input type="hidden" name="_subject" value="Novo contato!">
-                    <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-            </div>
-        </section>
+        <div class="mark" aria-hidden="true">↗</div>
+        <p class="eyebrow">Uma novidade pra você</p>
+        <h1>Este site mudou</h1>
+        <p class="message">Agora estamos em um novo endereço. Acesse o novo site e confira tudo por lá.</p>
+        <a class="button" href="https://galegodossites.vercel.app/">
+            Ir para o novo site <span aria-hidden="true">→</span>
+        </a>
+        <a class="address" href="https://galegodossites.vercel.app/">galegodossites.vercel.app</a>
     </main>
-    <div id="zap">
-        <a href="https://wa.me/5585996015796" target="_blank"><box-icon type='logo' name='whatsapp'></box-icon></a>
-    </div>
-    <div id="home">
-        <a href="#header"><box-icon name='home'></box-icon></a>
-    </div>
-    <footer>
-        <p>Desenvolvido por <a href="https://github.com/Rayanzin" target="_blank">Levi Rayan</a></p>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="js/index.js"></script>
 </body>
-
 </html>
